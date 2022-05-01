@@ -8,7 +8,7 @@
     color: white;
     display: flex;
     align-items: center;
-    height: 120vh;
+    height: auto;
     position: relative;
 
     .show-img-from-top-right {
@@ -163,6 +163,26 @@
                         object-fit: cover;
                     }
                 }
+                .social {
+                    padding: 10px;
+                    display: none;
+                    h4 {
+                        font-size: 18px;
+                    }
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-around;
+                        width: 90%;
+                        li {
+                            img {
+                                width: 28px;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -202,3 +222,168 @@
     }
 
 }
+
+
+
+
+
+
+
+// responsive
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .main-home {
+        height: auto;
+
+        .pr-item {
+            width: 100%;
+            z-index:999;
+            position: relative;
+            .it-img-top {
+                img {
+                    width: 100%;
+                }
+            }
+            
+            .cho-img {
+                .one-tow {
+                    .wid-item {
+                        width: 50% ;
+                    }
+                    .hei-item {
+                        width: 40%;
+                    }
+                }
+            }
+            .create-card {
+                position: relative;
+                z-index: 9999;
+                .add-name {
+                    input {
+                        width: 90%;
+                    }
+                }
+
+                .img-ha {
+                    a {
+                        span {
+                            top: 10%;
+                            transform: translate(-10%, -20%);
+                            left: 39%; 
+                        }
+                    }
+
+                    .social {
+                        display: block;
+                    }
+
+                }
+            }
+
+
+
+
+        }
+
+        .show-img-from-top-right {
+            opacity: .6;
+        }
+
+        .img-from-bottom-right {
+            opacity: .6;
+            .social {
+                display: none;
+            }
+        }
+
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .main-home {
+        height: auto;
+
+        .pr-item {
+            width: 80%;
+            z-index:999;
+            position: relative;
+            .it-img-top {
+                img {
+                    width: 90%;
+                }
+            }
+            
+            .cho-img {
+                .one-tow {
+                    .wid-item {
+                        width: 50% ;
+                    }
+                    .hei-item {
+                        width: 40%;
+                    }
+                }
+            }
+            .create-card {
+                position: relative;
+                z-index: 9999;
+                .add-name {
+                    input {
+                        width: 90%;
+                    }
+                }
+
+                .img-ha {
+                    a {
+                        span {
+                            top: 10%;
+                            transform: translate(-10%, -20%);
+                            left: 39%; 
+                        }
+                    }
+                    .social {
+                        display: block;
+                        ul {
+                            width: 40%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+
+        .show-img-from-top-right {
+            opacity: .6;
+        }
+
+        .img-from-bottom-right {
+            opacity: .6;
+            .social {
+                display: none;
+            }
+        }
+
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .main-home {
+        height: auto;
+
+        .pr-item {
+            .create-card {
+                .img-ha {
+                    .social {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+ }
