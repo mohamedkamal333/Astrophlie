@@ -32,15 +32,19 @@ function Home() {
           <div className="cho-img">
             <p>فضلًا اختر حجم الصورة المطلوب</p>
             <div className="one-tow">
-              <div className="wid-item">
-                <div className="bacgo-wi"></div>
+              <div className="wid-item add-Acti">
+                <div className="bacgo-wi">
+                  <img src={cardWidth} alt="not available"/>
+                </div>
                 <div className="txt-down">
                   <h4>عرضي</h4>
                   <span></span>
                 </div>
               </div>
-              <div className="hei-item">
-                <div className="bacgo-hei"></div>
+              <div className="hei-item add-Acti">
+                <div className="bacgo-hei">
+                <img src={cardHeight} alt="not available"/>
+                </div>
                 <div className="txt-down">
                   <h4>طولي</h4>
                   <span></span>
@@ -63,35 +67,7 @@ function Home() {
                 <span>بدعم من</span>
                 <img src={footerImage} alt="يدعم من" />
               </a>
-              <div className="social">
-                <h4>انتسب إلينا</h4>
-                <ul>
-                  <li>
-                    {" "}
-                    <a
-                      href="https://www.youtube.com/channel/UChaP5I6GcKi8MnfIGbT9UOA"
-                      target="_blank"
-                    >
-                      <img src={iconYout} alt="youtube" />
-                    </a>{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    <a href="https://t.me/Ar_Astrophile" target="_blank">
-                      <img src={iconTelegram} alt="telegram" />
-                    </a>{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    <a
-                      href="https://mobile.twitter.com/astrophile_ar"
-                      target="_blank"
-                    >
-                      <img src={iconTwiter} alt="twitter" />
-                    </a>{" "}
-                  </li>
-                </ul>
-              </div>
+
             </div>
           </div>
         </div>
